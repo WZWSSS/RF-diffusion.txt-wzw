@@ -1,0 +1,149 @@
+ ###~/rf/RF diffusion/RFdiffusion/examples里面输入命令##
+###pdb文件放在input_pdbs###
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/3fcr.pdb 'contigmap.contigs=[A50-100/0 100-100]'  inference.num_designs=10 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A1-150/0 70-100]' 'ppi.hotspot_res=[A59,A83,A91]' inference.num_designs=10 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/3fcr.pdb 'contigmap.contigs=[A50-100/0 100-100]'  inference.num_designs=10 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 10-15]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                PDB文件长度大概23-25左右
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 15-100]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0               PDB文件长度大概100     
+
+ python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 8-10]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                 PDB文件长度大概19左右   
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=3000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                    PDB文件长度大概16左右
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=3000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                    PDB文件长度大概16左右
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 3-5]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                    PDB文件长度大概14左右
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[3-3/A86-95/3-3]' 'ppi.hotspot_res=[G87,I89,A92,L93,F95]' inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0                    报错
+
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_4/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 7-8]' 'ppi.hotspot_res=[A317,A318,A319,A320,A321,A322,A323,A324,A325,A326,A327,A328,A329,A330,A331,A332,A333,A334,A335,A336,A337,A338]'  inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_5/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 10-11]' 'ppi.hotspot_res=[A317,A318,A319,A320,A321,A322,A323,A324,A325,A326,A327,A328,A329,A330,A331,A332,A333,A334,A335,A336,A337,A338]'  inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_3/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 2-3]' 'ppi.hotspot_res=[A317,A318,A319,A320,A321,A322,A323,A324,A325,A326,A327,A328,A329,A330,A331,A332,A333,A334,A335,A336,A337,A338]'  inference.num_designs=100 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_2/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 4-6]'  inference.num_designs=300 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=example_outputs7/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 2-3]'  inference.num_designs=1000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_6/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 4-6]'  inference.num_designs=1000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_7/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=1000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_7_2/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=1000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_7_3/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=1000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_7_4/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_7_5/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.15_1/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=3000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.15_2/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=3000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.15_2/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=3000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.16.1_LAST/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A47-55/0 6-8]' 'ppi.hotspot_res=[A48,A50,A54]' inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.17_1/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.17_2/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5-8]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_9.19_1/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ZNF384_9.19_2/design_ppi inference.input_pdb=input_pdbs/ZNF384.pdb 'contigmap.contigs=[A317-338/0 6-8]'  inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.28_1/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.28_2/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=5000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0 
+
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.28_1/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=10000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=RBM38C_9.28_2/design_ppi inference.input_pdb=input_pdbs/rbm38c.pdb 'contigmap.contigs=[A86-95/0 5]' 'ppi.hotspot_res=[A87,A89,A92,A93,A95]' inference.num_designs=10000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ADRB_1027_1/design_ppi inference.input_pdb=input_pdbs/ADRB.pdb 'contigmap.contigs=[A4-10/0 5]' 'ppi.hotspot_res=[A6,A7,A8,A9]' inference.num_designs=10000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+python ../scripts/run_inference.py inference.output_prefix=ADRB_1027_2/design_ppi inference.input_pdb=input_pdbs/ADRB.pdb 'contigmap.contigs=[A4-10/0 5]' 'ppi.hotspot_res=[A6,A7,A8,A9]' inference.num_designs=10000 denoiser.noise_scale_ca=0 denoiser.noise_scale_frame=0
+
+
+
+python ../scripts/run_inference.py inference.output_prefix=1lp1_24.1.19_1/design_partialdiffusion inference.input_pdb=input_pdbs/1lp1_0001_0748.pdb 'contigmap.contigs=[A1-5/6-40/A41-61]' inference.num_designs=100 diffuser.partial_T=10
+
+python ../scripts/run_inference.py inference.output_prefix=1lp1_24.1.19_1/design_motifscaffolding inference.input_pdb=input_pdbs/1lp1_0001_0748.pdb 'contigmap.contigs=[6-40/A1-5/A41-61]' inference.num_designs=50   ----失败，胡乱生成，序列长度都不一样
+
+###
+[2024-01-23 18:10:37,183][rfdiffusion.inference.model_runners][INFO] - Timestep 41, input to next step: -----------------------------------NKELSAEADLQTDSASKDNLEKVVKA
+
+conda activate mlfold
+
+python ./helper_scripts/parse_multiple_chains.py --input_path=./inputpdb --output_path=./outputs/1.json
+
+python ./protein_mpnn_run.py --jsonl_path ./outputs/1.json --out_folder ./outputs --num_seq_per_target 9 --sampling_temp "0.1" --seed 37
+
+cd outputs/seqs/
+
+./xx.bash
+
+cat *.fa > ZNF384_9.19_2.fa
+
+
+python ../scripts/run_inference.py inference.output_prefix=1lp1_24.1.19_1/design_partialdiffusion inference.input_pdb=input_pdbs/1lp1_0001_0748.pdb 'contigmap.contigs=[A1-5/56]' inference.num_designs=50 diffuser.partial_T=50
+
+python ./scripts/run_inference.py inference.output_prefix=outputs/de inference.input_pdb=./4e3q.pdb 'contigmap.contigs=[10-100/A170-172/70-100/A243-243/30-35/A276-279/50-60/A305-305/10-50/0 100-150/B342-342/10-100]' potentials.guide_scale=1 'potentials.guiding_potentials=["type:substrate_contacts,s:1,r_0:8,rep_r_0:5.0,rep_s:2,rep_r_min:1"]' potentials.substrate=PMP inference.ckpt_override_path=./models/ActiveSite_ckpt.pt
+
+### 'contigmap.contigs=[10-100/A170-172/70-100/A243-243/30-35/A276-279/50-60/A305-305/10-50/0 100-150/B342-342/10-100]'  保留A170-172 A243 A276-279 A305 B342位点，其他地方随机生成
+### 'potentials.guiding_potentials=["type:substrate_contacts,s:1,r_0:8,rep_r_0:5.0,rep_s:2,rep_r_min:1"]'  告诉那个编译器里面有个底物
+
+###  potentials.substrate=PMP  底物叫PMP
+
+
+python protein_mpnn_run.py --pdb_path ./de_0.pdb --out_folder outputpdb --num_seq_per_target 5
+
+##RFdiffusion参考脚本：design enzyme
+
+conda create --name mlfold - this creates conda environment called mlfold
+source activate mlfold - this activate environment
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch - install pytorch following steps
+conda activate mlfold
+python protein_mpnn_run,py --pdb_path abcd.pdb \--out folder \home\out\ --num_seq_per_target 5
+python ./helper_scripts/parse_multiple_chains.py --input_path=./inputpdb --output_path=./outputs/1.json
+python ./protein_mpnn_run.py --jsonl_path ./outputs/1.json --out_folder ./outputs --num_seq_per_target 5 --sampling_temp "0.1" --seed 37
+
+
+python ./protein_mpnn_run.py --jsonl_path ./outputs/1.json --out_folder ./outputs --num_seq_per_target 9 --sampling_temp "0.1" --seed 0 --save_score 1
+
+
+
+20240123
+conda activate mlfold
+
+python ./helper_scripts/parse_multiple_chains.py --input_path=./inputpdb --output_path=./outputs/1.json
+
+python ./protein_mpnn_run.py --jsonl_path ./outputs/1.json --out_folder ./outputs --num_seq_per_target 9 --sampling_temp "0.1" --seed 37
+
+cd outputs/seqs/
+
+./xx.bash
+
+cat *.fa > ZNF384_9.19_2.fa
+#!/bin/bash
+TxtDir="$(dirname "$0")"
+N=2
+echo "删除行操作开始，请耐心等待。"
+echo "正在执行，请勿关闭本窗口。"
+echo "..."
+cd "$TxtDir"
+for file in *.fa; do
+  tail -n +$N "$file" > "${file}_temp"
+  rm -f "$file"
+  mv "${file}_temp" "$file"
+done
+echo "执行任务结束。"
+read -p "按Enter键继续..."
